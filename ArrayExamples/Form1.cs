@@ -58,6 +58,22 @@ namespace ArrayExamples
             /// 
             /// Sample Output
             /// -6 8 24 6 5
+            numbers[1] = numbers[1] + 5; //numbers[1] += 5;
+
+            numbers[2] = numbers[2] * numbers[4]; //numbers[2] *= numbers[4]
+
+            numbers[0] = numbers[0] - numbers[1];
+
+
+            int saved = 0;
+            saved = numbers[3];
+            numbers[3] = numbers[4];
+            numbers[4] = saved;
+
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                q3Output.Text += $"{numbers[i]} ";
+            }
 
 
         }
